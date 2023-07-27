@@ -16,4 +16,21 @@ public class DogHandler {
     public long getNoOfDogs() {
         return itsDogsRepo.count();
     }
+
+    Dog getDogByName( String name ){
+        Dog newDog = new Dog();
+        newDog.setName(name);
+        int count = itsDogsRepo.findByName(newDog).size();
+        if(count > 1){
+            return null;
+        }
+        else if (count == 1){
+            return itsDogsRepo.findByName(newDog).get(0);
+        }
+        else{
+            return null;
+        }
+    }
+
+
 }

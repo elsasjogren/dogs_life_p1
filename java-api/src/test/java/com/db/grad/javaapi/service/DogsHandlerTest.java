@@ -33,4 +33,9 @@ public class DogsHandlerTest {
 
     }
 
+    @Test
+    public  void    add_several_dogs_return_number_of_dogs_match_number_added(){
+
+    }
+
 }
