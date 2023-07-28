@@ -61,7 +61,7 @@ public class DogService implements IDogsService
     {
         Dog dogToFind = new Dog();
         dogToFind.setName(dogsName);
-        List<Dog> dogs = itsDogsRepo.findByName(dogToFind);
+        List<Dog> dogs = itsDogsRepo.findByName(dogsName);
         Dog result = null;
 
         if( dogs.size() == 1) {

@@ -7,5 +7,5 @@ import java.util.List;
 
 public interface DogsRepository extends JpaRepository<Dog, Integer> {
 
-    List<Dog> findByName(Dog dogToFind);
+    List<Dog> findByName(String dogToFind);
 }
