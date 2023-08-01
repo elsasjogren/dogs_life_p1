@@ -20,7 +20,7 @@ const AllHeroes = () => {
     return (
       <Row >
         {heroes.map(hero => (
-            <div className='container' key={hero.id} style={{maxWidth: 300}}>
+            <div className='container' key={hero.id}>
               <HeroDetail info={hero}/>
             </div>
           ))}
